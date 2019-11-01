@@ -6,9 +6,9 @@ const isOperator = val => {
 }
 
 const Button = props => (
-  <div>
+  <div className={`button-wrapper ${isOperator(props.children) ? null : "operator"}`}>
     {props.children}
-  </div>
+  </div >
 )
 
 export default Button
